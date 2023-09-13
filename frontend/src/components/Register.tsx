@@ -15,7 +15,7 @@ const Registration: React.FC = () => {
     }
 
     try{
-         await axios.post("http://localhost:5000/api/v1/register",{
+         await axios.post("https://todo-app-three-rosy.vercel.app/api/v1/register",{
           username, email, password
         })
         .then((response) => {

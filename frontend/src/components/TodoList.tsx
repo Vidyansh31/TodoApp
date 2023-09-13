@@ -16,7 +16,7 @@ const TodoList: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/v1/getTodos", {
+      .get("https://todo-app-three-rosy.vercel.app/api/v1/getTodos", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -33,7 +33,7 @@ const TodoList: React.FC = () => {
   const handleMarkCompleted = async (todoId: string) => {
     try {
       await axios.post(
-        `http://localhost:5000/api/v1/markTodo`,
+        `https://todo-app-three-rosy.vercel.app/api/v1/markTodo`,
         {todoId},
         {
           headers: {
@@ -57,7 +57,7 @@ const TodoList: React.FC = () => {
   const handleDelete = async (todoId: string) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/v1/delete`,
+        `https://todo-app-three-rosy.vercel.app/api/v1/delete`,
         {
           data: { todoId },
           headers: {

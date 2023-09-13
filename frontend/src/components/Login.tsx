@@ -15,7 +15,7 @@ const Login: React.FC = () => {
     }
 
     try{
-      const {data } = await axios.post("http://localhost:5000/api/v1/login", {
+      const {data } = await axios.post("https://todo-app-three-rosy.vercel.app/api/v1/login", {
         email, password,
         headers: {
           "Content-Type": "application/json"
