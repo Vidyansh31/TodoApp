@@ -1,0 +1,193 @@
+/* Registration.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.form > div{
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form input {
+  width: 30vw;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+.form p {
+  color: #666;
+  font-style: italic;
+}
+
+.form p span {
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.form p a{
+  text-decoration:none
+}
+
+
+/* Navbar.css */
+.navbar {
+  background-color: #007bff; 
+  color: #fff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar button {
+  background-color: #fff; 
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  background-color: #f0f0f0; 
+}
+
+/* TodoForm.css */
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  max-width: 400px; 
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+.todo-form h2 {
+  margin-bottom: 10px;
+}
+
+.todo-form input {
+  width: 80vw; 
+  padding: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.todo-form button {
+  width: 10vw; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* TodoList.css */
+.todo-list-container {
+  padding: 20px;
+}
+
+.todo-list-container > h1{
+  text-align: center;
+}
+
+.todo-list-item{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.todo-item {
+  width: 15vw;
+  height: 20vh;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item p {
+  height: 15vh;
+  margin: 0;
+}
+
+.todo-item.completed {
+  background-color: rgb(132, 245, 132);
+}
+
+.todo-item.incomplete {
+  background-color: rgb(241, 174, 174);
+}
+
+.todo-item button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.todo-item button:hover {
+  background-color: #0056b3;
+}
+
+
+ 
